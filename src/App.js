@@ -1,5 +1,7 @@
 import './App.css';
 import Bhook from './Components/Bhook';
+import List from './Components/List';
+import UseForms from './Components/UseForms';
 
 const user={
   name:'rahul',
@@ -35,14 +37,17 @@ const Job =(props)=>{
 
 function App() {
   return (
-    <div className="App">
-
-    basics  
+    <div className='App'>
+      
+   <Bhook/>
+   <List/>
+   <UseForms/>
+    {/* basics  
     <User {...user}/>
     <Job sla={123} pos='senior' cmp='amaz'/> 
     <button onClick={handleClick }>click change</button>
     <button onClick={reset}>click change</button>
-     <h1>rahul</h1>
+     <h1>rahul</h1> */}
     </div>
   );
 }
