@@ -6,6 +6,8 @@ function UseEffectex1() {
     window.addEventListener('pointermove',(e)=>{
        setState({x:e.clientX,y:e.clientY})
     })
+    //this is a clean up function
+    return window.removeEventListener('pointermove');
   },[])
 
   return (
