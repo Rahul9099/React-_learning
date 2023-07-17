@@ -1,9 +1,11 @@
 import './App.css';
 import Bhook from './Components/Bhook';
 import List from './Components/List';
+import Memoiezed from './Components/Memoiezed';
 import UseEfex2 from './Components/UseEfex2';
 import UseEffectex1 from './Components/UseEffectex1';
 import UseForms from './Components/UseForms';
+import Kitty from './Components/kitty';
 
 const user={
   name:'rahul',
@@ -40,8 +42,10 @@ const Job =(props)=>{
 function App() {
   return (
     <div className='App'>   
-<UseEfex2/>
+    <Memoiezed/>
    {/* <UseEffectex1/>
+    <Kitty/>
+<UseEfex2/>
    <Bhook/>
    <List/>
    <UseForms/> */}

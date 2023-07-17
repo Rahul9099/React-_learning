@@ -8,12 +8,12 @@ function UseRefex1() {
 
     function start(){
         setTime.current = Date.now();
-        stopRef = setInterval(() => {
+        stopRef.current = setInterval(() => {
             setNow(Date.now());
         }, 10);
     }
     function stop(){
-    clearInterval(stopRef);
+    clearInterval(stopRef.current);
     }
     second = (now - setTime.current)/1000;
   return (
